@@ -4,8 +4,9 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue',
-  'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack:
+  'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial',
+  sans-serif !default;
 
 /// Copy text color
 /// @type Color
@@ -44,11 +45,11 @@ $themes: (
   light: (
     text: #222,
     background: #fff,
-    primary: #007bff
+    primary: #007bff,
   ),
   dark: (
     text: #fff,
     background: #121212,
-    primary: #1e90ff
-  )
+    primary: #1e90ff,
+  ),
 );

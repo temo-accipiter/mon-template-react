@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import './Footer.scss'
 
-function Footer() {
+export default function Footer() {
   const { t } = useTranslation('footer') // <- namespace "footer.json"
 
   return (
@@ -10,5 +10,3 @@ function Footer() {
     </footer>
   )
 }
-
-export default Footer

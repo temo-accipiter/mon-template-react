@@ -9,7 +9,7 @@
     &:active,
     &:focus,
     &:focus-within {
-      @content;     // pour injecter dynamiquement du contenu CSS
+      @content; // pour injecter dynamiquement du contenu CSS
     }
   } @else {
     &:hover,
@@ -27,4 +27,3 @@
     @content;
   }
 }
-

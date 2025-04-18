@@ -1,7 +1,5 @@
 import './Contact.scss'
 
-function Contact() {
+export default function Contact() {
   return <h1>Page Contact 📞</h1>
 }
-
-export default Contact

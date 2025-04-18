@@ -31,9 +31,9 @@ Ainsi tu évites de casser les fichiers d’origine, ce qui est essentiel pour :
 
 ## 📘 Résumé
 
-| Fichier                  | Rôle                                     |
-|--------------------------|------------------------------------------|
-| `vendors/_normalize.scss` | Fournit un reset CSS moderne            |
-| `vendors-extensions/`     | Surcharges personnalisées (si besoin)   |
+| Fichier                   | Rôle                                  |
+| ------------------------- | ------------------------------------- |
+| `vendors/_normalize.scss` | Fournit un reset CSS moderne          |
+| `vendors-extensions/`     | Surcharges personnalisées (si besoin) |
 
 👉 Garde tes propres styles séparés des fichiers `vendors/` pour plus de sécurité et de maintenabilité.

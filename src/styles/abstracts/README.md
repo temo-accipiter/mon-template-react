@@ -26,10 +26,10 @@ Il contient uniquement du **code Sass technique** : pas de CSS directement gén�
 
 Pour les projets de grande taille, tu peux organiser ce dossier par **sujets fonctionnels** plutôt que par type :
 
-| Exemple de fichier     | Contenu regroupé                          |
-|------------------------|-------------------------------------------|
-| `_typography.scss`     | Variables typographiques, mixins liés     |
-| `_theming.scss`        | Gestion des couleurs, dark/light mode     |
+| Exemple de fichier | Contenu regroupé                      |
+| ------------------ | ------------------------------------- |
+| `_typography.scss` | Variables typographiques, mixins liés |
+| `_theming.scss`    | Gestion des couleurs, dark/light mode |
 
 Cela rend le code plus lisible et mieux organisé pour les projets complexes.
 
@@ -51,6 +51,7 @@ Cela rend le code plus lisible et mieux organisé pour les projets complexes.
 ---
 
 🎯 En résumé :
+
 - Pas de CSS généré
 - Code Sass modulaire, clair, maintenable
 - Accès centralisé aux outils Sass de ton projet

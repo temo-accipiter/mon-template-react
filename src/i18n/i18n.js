@@ -41,16 +41,14 @@ const resources = {
 // 🚀 Initialisation de i18next avec React
 // ==============================
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: localStorage.getItem('lang') || 'fr', // ← langue mémorisée ou "fr" par défaut
-    fallbackLng: 'fr', // ← si la langue choisie est absente, on utilise le français
+i18n.use(initReactI18next).init({
+  resources,
+  lng: localStorage.getItem('lang') || 'fr', // ← langue mémorisée ou "fr" par défaut
+  fallbackLng: 'fr', // ← si la langue choisie est absente, on utilise le français
 
-    interpolation: {
-      escapeValue: false, // ← nécessaire pour React (protection contre l'injection HTML inutile ici)
-    },
-  })
+  interpolation: {
+    escapeValue: false, // ← nécessaire pour React (protection contre l'injection HTML inutile ici)
+  },
+})
 
 export default i18n

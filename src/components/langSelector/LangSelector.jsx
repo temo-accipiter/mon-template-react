@@ -5,18 +5,22 @@
 import { useTranslation } from 'react-i18next'
 import './LangSelector.scss'
 
-function LangSelector() {
+export default function LangSelector() {
   const { i18n } = useTranslation()
   const currentLang = i18n.language // Langue actuelle (ex: 'fr')
 
   // 🔁 Fonction pour changer de langue
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang)         // Mise à jour via i18next
+    i18n.changeLanguage(lang) // Mise à jour via i18next
     localStorage.setItem('lang', lang) // Sauvegarde dans le localStorage
   }
 
   return (
-    <div className="lang-selector" role="group" aria-label="Sélecteur de langue">
+    <div
+      className="lang-selector"
+      role="group"
+      aria-label="Sélecteur de langue"
+    >
       {/* 🇫🇷 Bouton pour le français */}
       <button
         className={currentLang === 'fr' ? 'active' : ''}
@@ -37,8 +41,3 @@ function LangSelector() {
     </div>
   )
 }
-
-export default LangSelector
-
-
-

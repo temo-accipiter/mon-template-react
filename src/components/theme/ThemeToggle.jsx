@@ -5,7 +5,7 @@
 import { useEffect, useState } from 'react'
 import './ThemeToggle.scss'
 
-function ThemeToggle() {
+export default function ThemeToggle() {
   // 📦 État local pour stocker le thème actuel
   const [theme, setTheme] = useState('light')
 
@@ -28,16 +28,15 @@ function ThemeToggle() {
     <button
       className="theme-toggle"
       onClick={toggleTheme}
-      aria-label={theme === 'light' ? 'Activer le thème sombre' : 'Activer le thème clair'}
-      title={theme === 'light' ? 'Activer le thème sombre' : 'Activer le thème clair'}
+      aria-label={
+        theme === 'light' ? 'Activer le thème sombre' : 'Activer le thème clair'
+      }
+      title={
+        theme === 'light' ? 'Activer le thème sombre' : 'Activer le thème clair'
+      }
     >
       {/* 🌞 ou 🌙 selon le thème */}
       {theme === 'light' ? '🌞' : '🌙'}
     </button>
   )
 }
-
-export default ThemeToggle
-
-
-

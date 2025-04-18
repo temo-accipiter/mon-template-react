@@ -16,31 +16,37 @@ Ce projet est un **template React personnalisé** prêt à l'emploi avec :
 ## ✅ Étapes pour lancer un nouveau projet
 
 ### 1. Copier le template
+
 ```bash
 cp -R ~/Desktop/projets/mon-template-react ~/Desktop/projets/nom-du-nouveau-projet
 ```
 
 ### 2. Entrer dans le dossier
+
 ```bash
 cd ~/Desktop/projets/nom-du-nouveau-projet
 ```
 
 ### 3. Supprimer l’ancien Git (si présent)
+
 ```bash
 rm -rf .git
 ```
 
 ### 4. (Optionnel) Modifier le `package.json`
+
 - `"name"` du projet
 - `"description"`
 - `"author"`
 
 ### 5. Installer les dépendances
+
 ```bash
 yarn install
 ```
 
 ### 6. (Optionnel) Vérifier ou formater ton code
+
 ```bash
 yarn lint         # Vérifie le code avec ESLint
 yarn lint --fix   # Corrige automatiquement les erreurs
@@ -48,6 +54,7 @@ yarn format       # Formate le code avec Prettier
 ```
 
 ### 7. (Optionnel) Créer un nouveau dépôt Git
+
 ```bash
 git init
 git add .
@@ -55,6 +62,7 @@ git commit -m "Initial commit"
 ```
 
 ### 8. Lancer le projet en local
+
 ```bash
 yarn dev
 ```

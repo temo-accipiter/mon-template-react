@@ -1,10 +1,14 @@
+// ==============================
+// 🔝 En-tête principal du site
+// ==============================
+
 import { useTranslation } from 'react-i18next'
 import './Header.scss'
 import ThemeToggle from '../theme/ThemeToggle'
 import LangSelector from '../langSelector/LangSelector'
 import { NavLink } from 'react-router-dom'
 
-function Header() {
+export default function Header() {
   const { t } = useTranslation('header') // ← on utilise le namespace "header"
 
   return (
@@ -12,13 +16,22 @@ function Header() {
       <h1>{t('title')}</h1>
 
       <nav className="nav">
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
           {t('home')}
         </NavLink>
-        <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
           {t('about')}
         </NavLink>
-        <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
           {t('contact')}
         </NavLink>
       </nav>
@@ -30,7 +43,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header
-
-

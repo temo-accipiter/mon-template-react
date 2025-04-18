@@ -1,18 +1,18 @@
 // ==============================
 // 🎨 Feuille de style principale
 // ==============================
-import "@/styles/main.scss"
+import '@/styles/main.scss'
 
 // ==============================
 // 🧩 Composants globaux
 // ==============================
-import Header from "@/components/header/Header"
-import Footer from "@/components/footer/Footer"
+import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer'
 
 // ==============================
 // 📦 Outlet : zone de contenu pour les routes enfants
 // ==============================
-import { Outlet } from "react-router-dom"
+import { Outlet } from 'react-router-dom'
 
 // ==============================
 // 🧱 Structure principale de l'application

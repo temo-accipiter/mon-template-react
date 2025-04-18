@@ -7,6 +7,10 @@ import { defineConfig } from 'eslint/config'
 export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
+
+    // 🛑 Ignore les fichiers/folders qu'on ne veut pas analyser
+    ignores: ['**/node_modules/**', '**/dist/**', '**/.yarn/**', '**/.pnp.*'],
+
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
@@ -17,16 +21,19 @@ export default defineConfig([
         },
       },
     },
+
     settings: {
       react: {
         version: 'detect',
       },
     },
+
     plugins: {
       js,
       react: pluginReact,
       prettier: pluginPrettier,
     },
+
     rules: {
       ...js.configs.recommended.rules,
       ...pluginReact.configs.recommended.rules,

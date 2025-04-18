@@ -34,11 +34,11 @@ Il pose les fondations visuelles de l’interface, avant d’appliquer des style
 
 ## 📌 Bonnes pratiques
 
-| À faire ✅                          | À éviter ❌                     |
-|------------------------------------|---------------------------------|
-| Organiser les fichiers par usage  | Mettre tous les styles de base dans un seul fichier |
-| Importer via `@forward` dans `_index.scss` | Répéter les `@use` dans `main.scss` |
-| Éviter les styles trop spécifiques | Ajouter des composants ici      |
+| À faire ✅                                 | À éviter ❌                                         |
+| ------------------------------------------ | --------------------------------------------------- |
+| Organiser les fichiers par usage           | Mettre tous les styles de base dans un seul fichier |
+| Importer via `@forward` dans `_index.scss` | Répéter les `@use` dans `main.scss`                 |
+| Éviter les styles trop spécifiques         | Ajouter des composants ici                          |
 
 ---
 

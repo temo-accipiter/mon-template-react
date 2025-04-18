@@ -34,30 +34,39 @@ src/
 ## 📁 Détail des dossiers
 
 ### `assets/`
+
 > Contient toutes les ressources statiques : images, SVG, icônes, polices, etc.
 
 ### `components/`
+
 > Composants réutilisables, organisés par dossier : 1 composant = 1 dossier = 1 `.jsx` + 1 `.scss`
 
 ### `pages/`
+
 > Composants correspondant à une route (`/home`, `/about`, etc.)
 
 ### `data/`
+
 > Données statiques, JSON, objets simulant des réponses API (mock)
 
-### `hooks/` *(optionnel)*
+### `hooks/` _(optionnel)_
+
 > Tous les custom hooks que tu crées (`useForm`, `useDarkMode`, etc.)
 
-### `services/` *(optionnel)*
+### `services/` _(optionnel)_
+
 > Fichiers pour gérer la logique des appels API (`todoistService.js`, `authService.js`, etc.)
 
-### `layouts/` *(optionnel)*
+### `layouts/` _(optionnel)_
+
 > Layouts globaux qui englobent plusieurs pages (ex : admin vs public)
 
-### `router/` *(optionnel)*
+### `router/` _(optionnel)_
+
 > Fichier `routes.jsx` ou `AppRoutes.jsx` pour extraire le `<Routes />` de `App.jsx`
 
 ### `styles/`
+
 > Tous les styles SCSS globaux (structure moderne avec `@use` / `@forward`)
 
 ---

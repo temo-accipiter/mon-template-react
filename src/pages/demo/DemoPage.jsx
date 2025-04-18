@@ -12,12 +12,12 @@
  * Ne pas inclure cette page dans la version publique du site.
  */
 
+import { useTranslation } from 'react-i18next'
 import ThemeToggle from '@/components/theme/ThemeToggle'
 import LangSelector from '@/components/langSelector/LangSelector'
-import { useTranslation } from 'react-i18next'
 import './DemoPage.scss'
 
-function DemoPage() {
+export default function DemoPage() {
   const { t } = useTranslation('common')
 
   return (
@@ -51,6 +51,3 @@ function DemoPage() {
     </section>
   )
 }
-
-export default DemoPage
-
