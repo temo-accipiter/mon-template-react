@@ -4,6 +4,7 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+!.yarn/unplugged
 # Editor directories and files
 # Logs
 # Yarn v2+ (Plug'n'Play)
