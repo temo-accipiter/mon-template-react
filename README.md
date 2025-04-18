@@ -1,5 +1,7 @@
 # 🚀 Démarrer un nouveau projet React (template personnel)
 
+[![Licence: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 Ce projet est un **template React personnalisé** prêt à l'emploi avec :
 
 - ⚡ Vite
@@ -70,3 +72,11 @@ yarn dev
 ---
 
 🧠 Ce template est conçu pour te faire gagner du temps, avec une structure moderne, simple à maintenir et évolutive.
+
+---
+
+## 📋 Checklist complète du template
+
+Ce template inclut plein de bonnes pratiques modernes (accessibilité, dark mode, i18n, conventions de code…).
+
+👉 Consulte le fichier [CHECKLIST_TEMPLATE_REACT.md](./CHECKLIST_TEMPLATE_REACT.md) pour avoir la vue d’ensemble complète.
