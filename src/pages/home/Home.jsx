@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import './Home.scss'
 
 function Home() {
-  return <h1 className="home-title">Bienvenue sur ton dashboard</h1>
+  const { t } = useTranslation()
+  return <h1>{t('welcome')}</h1>
 }
 
 export default Home

@@ -1,16 +1,34 @@
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/home/Home.jsx'
-import About from './pages/about/About.jsx'
+// ==============================
+// 🎨 Feuille de style principale
+// ==============================
+import "@/styles/main.scss"
 
-function App() {
+// ==============================
+// 🧩 Composants globaux
+// ==============================
+import Header from "@/components/header/Header"
+import Footer from "@/components/footer/Footer"
+
+// ==============================
+// 📦 Outlet : zone de contenu pour les routes enfants
+// ==============================
+import { Outlet } from "react-router-dom"
+
+// ==============================
+// 🧱 Structure principale de l'application
+// ==============================
+
+export default function App() {
   return (
-    <main>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </main>
+    <>
+      {/* 🧭 En-tête affiché sur toutes les pages */}
+      <Header />
+
+      {/* 📄 Contenu de la route en cours */}
+      <Outlet />
+
+      {/* ⚓ Pied de page global */}
+      <Footer />
+    </>
   )
 }
-
-export default App

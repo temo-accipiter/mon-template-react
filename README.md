@@ -2,80 +2,71 @@
 
 Ce projet est un **template React personnalisé** prêt à l'emploi avec :
 
-- Vite
-- Yarn (v3 Plug’n’Play)
-- React Router
-- Sass (SCSS) structuré
-- ESLint + Prettier déjà configurés
-- Structure modulaire : `styles/`, `pages/`, `components/`, `data/`, `assets/`
+- ⚡ Vite
+- 🧶 Yarn (v3 Plug’n’Play)
+- 🔀 React Router
+- 🎨 Sass (SCSS) structuré
+- 🧹 ESLint + Prettier configurés
+- 🧱 Structure modulaire : `styles/`, `pages/`, `components/`, `data/`, `assets/`
+
 ---
 
-## ✅ Étapes à suivre après avoir copié ce projet :
+## ✅ Étapes pour lancer un nouveau projet
 
-# 1. Copier le template
-cp -R ~/Desktop/projets/mon-template-react ~/Desktop/projets/new-project
+### 1. Copier le template
+```bash
+cp -R ~/Desktop/projets/mon-template-react ~/Desktop/projets/nom-du-nouveau-projet
+```
 
-# 2. Entrer dans le dossier
-cd ~/Desktop/projets/new-project
+### 2. Entrer dans le dossier
+```bash
+cd ~/Desktop/projets/nom-du-nouveau-projet
+```
 
-# 3. Supprimer l’ancien Git (si présent)
+### 3. Supprimer l’ancien Git (si présent)
+```bash
 rm -rf .git
+```
 
-# 4. (Optionnel) Modifier le package.json : nom, description, auteur
+### 4. (Optionnel) Modifier le `package.json`
+- `"name"` du projet
+- `"description"`
+- `"author"`
 
-# 5. Installer les dépendances
+### 5. Installer les dépendances
+```bash
 yarn install
+```
 
-# 5. (Optionnel) Vérifier / formater ton code
-yarn lint          # pour vérifier ton code
-yarn lint --fix    # pour corriger automatiquement
-yarn format        # pour appliquer Prettier
+### 6. (Optionnel) Vérifier ou formater ton code
+```bash
+yarn lint         # Vérifie le code avec ESLint
+yarn lint --fix   # Corrige automatiquement les erreurs
+yarn format       # Formate le code avec Prettier
+```
 
-# 6. (Optionnel) Créer un nouveau dépôt Git
+### 7. (Optionnel) Créer un nouveau dépôt Git
+```bash
 git init
 git add .
 git commit -m "Initial commit"
+```
 
-# 7. Lancer le projet
+### 8. Lancer le projet en local
+```bash
 yarn dev
+```
 
-👉 Le projet sera accessible à : http://localhost:5173
+👉 Le projet sera accessible ici : [http://localhost:5173](http://localhost:5173)
+
 ---
 
-## ✨ Convention utilisée
+## ✨ Conventions utilisées
 
-- Chaque composant ou page a son propre dossier + son fichier `.scss`
-- Tous les styles globaux sont centralisés dans `styles/main.scss`
-- Prettier et ESLint sont configurés pour formater automatiquement le code
+- ✅ 1 composant ou page = 1 dossier avec `.jsx` et `.scss`
+- 🎯 Tous les styles globaux sont importés via `styles/main.scss`
+- 🔧 Prettier + ESLint sont préconfigurés pour un code propre
 
-## ✨ Structure du projet
+---
 
-src/
-├── assets/              # Images, icônes, polices, etc.
-├── components/          # Composants réutilisables (1 dossier = 1 composant)
-│   ├── Header/
-│   │   ├── Header.jsx
-│   │   └── Header.scss
-│   └── Footer/
-│       ├── Footer.jsx
-│       └── Footer.scss
-├── pages/               # Pages principales (1 dossier = 1 page)
-│   ├── Home/
-│   │   ├── Home.jsx
-│   │   └── Home.scss
-│   └── About/
-│       ├── About.jsx
-│       └── About.scss
-├── styles/              # SCSS globaux
-│   ├── abstracts/       # Variables, mixins
-│   │   ├── _variables.scss
-│   │   └── _mixins.scss
-│   ├── base/            # Reset, base, typographie
-│   │   ├── _reset.scss
-│   │   ├── _base.scss
-│   │   └── _typography.scss
-│   ├── animations/      # Keyframes, transitions
-│   │   └── _keyframes.scss
-│   └── main.scss        # Point d’entrée des styles (importe tout le reste)
-├── App.jsx              # Composant racine
-├── main.jsx             # Point d’entrée React
+🧠 Ce template est conçu pour te faire gagner du temps, avec une structure moderne, simple à maintenir et évolutive.
